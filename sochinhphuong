@@ -1,0 +1,29 @@
+package sochinhphuong;
+
+import java.util.Scanner;
+
+
+
+/**
+ *
+ * @author thy12
+ */
+public class Sochinhphuong {
+    static boolean checkPerfectSquare(double x)
+    {
+        double sq = Math.sqrt(x);
+        return ((sq - Math.floor(sq)) == 0);
+    }
+    public static void main(String[] args)
+    {
+        System.out.print("nhap vao so can kiem tra:");
+        double num;
+    try (Scanner scanner = new Scanner(System.in)) {
+        num = scanner.nextDouble();
+    }
+        if (!checkPerfectSquare(num))
+            System.out.println(num+ " khong phai so chinh phuong ");
+        else
+            System.out.println(num+ " la so chinh phuong ");
+    }
+}
