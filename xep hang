@@ -1,0 +1,35 @@
+package xep.hang;
+import static java.time.Clock.system;
+import java.util.Scanner;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author thy12
+ */
+public class XepHang {
+
+    /**
+     * @param args the command line arguments
+     */
+    
+
+    public static void main(String[] args)
+    {
+      Scanner input = new Scanner (System.in);
+       Double score;
+       System.out.print("nhap diem: ");
+       score = input.nextDouble ();
+       {
+           if (score >=8)
+           System.out.print("Gioi");
+           else if ((score >=7) && (score <=8))
+           System.out.print("Kha");
+           else if ((score >=5) && (score <=7))
+           System.out.print("Trungbinh");
+           else 
+           System.out.print("Kem");
+       }
+}
+}
